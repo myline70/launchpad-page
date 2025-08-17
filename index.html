@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The 50+ Entrepreneur's Launchpad – Book Landing Page</title>
+  <meta name="description" content="A practical guide for 50+ professionals to turn experience into wealth and freedom. By Juma M.Z. Available on Amazon Kindle." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0a1a33; --ink-2:#142850; --gold:#d4af37; --gold-2:#c19b2e;
+      --paper:#f7f9fc; --white:#fff; --shadow:0 8px 24px rgba(0,0,0,.12);
+      --radius:14px; --max:1220px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif; background:var(--paper); color:#222; line-height:1.65}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin-inline:auto; padding:0 28px}
+
+    /* HERO */
+    .hero{
+      background: radial-gradient(1200px 600px at 80% 10%, rgba(212,175,55,.18), transparent),
+                  linear-gradient(90deg,var(--ink),var(--ink-2));
+      color:var(--white); padding:56px 0 44px;
+    }
+    .topbar{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px}
+    .brand{font-weight:800; letter-spacing:.4px}
+    .hero-grid{display:grid; grid-template-columns:430px 1fr; align-items:center; gap:48px}
+    .cover{width:100%; border-radius:16px; box-shadow:0 16px 60px rgba(0,0,0,.35); background:#0e1d39}
+    .hero h1{font-size:44px; line-height:1.15; margin:6px 0 8px}
+    .highlight{color:var(--gold)}
+    .subtitle{opacity:.95; font-size:18px; margin-bottom:22px}
+    .btn{display:inline-block; background:var(--gold); color:var(--ink-2); padding:16px 26px; border-radius:12px; font-weight:800; box-shadow:var(--shadow)}
+    .btn:hover{background:var(--gold-2)}
+
+    /* Sections */
+    section{padding:72px 0}
+    h2{font-size:34px; margin:0 0 22px; color:var(--ink-2); text-align:center}
+
+    /* Two equal cards */
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:stretch}
+    .panel{
+      background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:28px; display:flex; flex-direction:column; height:100%;
+    }
+    .panel h2{margin-bottom:12px}
+    .panel .btn{margin-top:auto; align-self:flex-start}
+
+    /* 3 cards per row */
+    .toc-wrap{display:flex; justify-content:center}
+    .toc{
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;
+      width:100%; max-width:1100px;
+    }
+    .card{
+      background:var(--white); border-radius:18px; padding:22px; text-align:center; box-shadow:var(--shadow)
+    }
+    .card strong{display:block; font-size:18px; margin-bottom:6px}
+
+    blockquote{
+      background:var(--white); border-left:6px solid var(--gold);
+      margin:0 auto; max-width:840px; padding:26px; border-radius:10px; box-shadow:var(--shadow); font-style:italic; color:#333;
+    }
+  
+    /* AUTHOR SECTION */
+    .author{display:grid; grid-template-columns:320px 1fr; gap:40px; align-items:center}
+    .author img{width:100%; border-radius:14px; box-shadow:var(--shadow)}
+
+    /* FOOTER */
+    footer{
+      background:linear-gradient(90deg,var(--ink-2),var(--ink));
+      color:var(--white); text-align:center; padding:58px 0 34px;
+    }
+    footer h2{color:#fff;}
+    .social{display:flex; gap:14px; justify-content:center; margin-top:22px}
+    .icon{
+      width:36px; height:36px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;
+      background:rgba(255,255,255,.12); transition:background .2s ease, transform .08s ease;
+    }
+    .icon:hover{background:rgba(255,255,255,.22); transform:translateY(-1px)}
+    .icon svg{width:20px; height:20px; fill:#fff}
+
+    /* Responsive */
+    @media (max-width:1120px){ .hero-grid{grid-template-columns:360px 1fr} }
+    @media (max-width:920px){
+      .hero-grid{grid-template-columns:1fr; text-align:center}
+      .cover{max-width:360px; margin:0 auto}
+      .two-col{grid-template-columns:1fr}
+      .toc{grid-template-columns:repeat(2,1fr)}
+      .author{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      .hero h1{font-size:30px}
+      h2{font-size:26px}
+      .toc{grid-template-columns:1fr}
+      section{padding:56px 0}
+      .container{padding:0 18px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">The 50+ Entrepreneur’s <span class="highlight">Launchpad</span></div>
+        <a class="btn" href="https://www.amazon.com/dp/YOUR_BOOK_ID" target="_blank">Buy on Amazon Kindle</a>
+      </div>
+      <div class="hero-grid">
+        <img class="cover" src="https://i.postimg.cc/bNrZMTwQ/book-cover.jpg" alt="Book cover: The 50+ Entrepreneur's Launchpad by Juma M.Z" />
+        <div>
+          <h1>Turn Your <span class="highlight">Experience</span> into Wealth and Freedom</h1>
+          <p class="subtitle">A practical roadmap for 50+ professionals to launch meaningful ventures, regain purpose, and design a life of freedom.</p>
+          <a class="btn" href="https://www.amazon.com/dp/YOUR_BOOK_ID" target="_blank">Get the Kindle Edition</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TWO EQUAL PANELS -->
+  <section>
+    <div class="container two-col">
+      <div class="panel">
+        <h2>About the Book</h2>
+        <p>Retirement is not the end—it’s a launchpad. Juma M.Z distills 30+ years of hands-on experience and an MBA into a clear, encouraging guide to help you move from career to calling.</p>
+        <ul>
+          <li>Quick Start: Launch your first idea in 14 days</li>
+          <li>Discover your strengths & test your market</li>
+          <li>One-Page Business Plan that actually works</li>
+          <li>50 business ideas under $1000 + printable trackers</li>
+        </ul>
+        <a class="btn" href="https://www.amazon.com/dp/YOUR_BOOK_ID" target="_blank">Buy Now on Amazon</a>
+      </div>
+      <div class="panel">
+        <h2>Who It's For</h2>
+        <p>Retirees and late-career professionals ready to reinvent with purpose—women and men who want practical steps, not theory.</p>
+        <ul>
+          <li>From employee to entrepreneur at 60+ (your superpower)</li>
+          <li>Money & momentum: budget, pricing, and simple tools</li>
+          <li>Growth & resilience with real success stories</li>
+          <li>Meaningful living: community, learning, and legacy</li>
+        </ul>
+        <a class="btn" href="https://www.amazon.com/dp/YOUR_BOOK_ID" target="_blank">See Kindle Edition</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 PER ROW CONTENT CARDS -->
+  <section style="background:#eef2f7;">
+    <div class="container">
+      <h2>Inside the Pages</h2>
+      <div class="toc-wrap">
+        <div class="toc">
+          <div class="card"><strong>Quick Start Guide</strong>A 14-day map to launch your first idea</div>
+          <div class="card"><strong>Discover & Define</strong>Strengths • Market Testing • Niche</div>
+          <div class="card"><strong>Money & Momentum</strong>Numbers • Free Marketing • Digital Tools</div>
+          <div class="card"><strong>Growth & Impact</strong>Scale • Real Stories • Setback Recovery</div>
+          <div class="card"><strong>Meaningful Living</strong>Learning • Community • Legacy</div>
+          <div class="card"><strong>Bonus Tools</strong>50 ideas under $1000 • 90-day tracker • One-page plan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- BONUS GIFTS SECTION -->
+  <section>
+    <div class="container">
+      <h2>🎁 Bonus Gifts</h2>
+      <div class="panel" style="max-width:850px; margin:auto; text-align:center;">
+        <p>As a special thank you, we’ve prepared a bonus gift for you. This resource is designed to give you extra inspiration and practical tools on your journey.</p>
+        <p><strong>👉 Download your free gift here:</strong></p>
+        <p><a class="btn" href="https://archive.org/details/gift-bonus-section" target="_blank">Download Bonus Gift</a></p>
+        <p style="margin-top:20px; font-size:15px; opacity:.85;">
+          And if you’d like to learn <strong>how to get the most out of this gift</strong> and apply it effectively in your life, don’t miss the full book:<br>
+          <a href="https://www.amazon.com/dp/YOUR_BOOK_ID" target="_blank" style="color:var(--gold); font-weight:600;">The 50+ Entrepreneur's Launchpad</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR SECTION -->
+  <section>
+    <div class="container author">
+      <img src="https://i.postimg.cc/cJ0JK0GZ/author-pic.jpg" alt="Author Juma M.Z" />
+      <div>
+        <h2>About the Author – Juma M.Z</h2>
+        <p>After a fulfilling 30-year career in administration, planning, human resources, and logistics, Juma transitioned into retirement carrying with him a wealth of hands-on experience and a strong desire to explore new horizons. He earned an MBA in Business Administration and launched a consulting venture to help professionals navigate their post-career transitions.</p>
+        <p>Through this book, he shares the essence of his journey, offering practical guidance for retirees to rediscover passion, build meaningful projects, and embrace a purposeful life after 50.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATION -->
+  <section>
+    <div class="container">
+      <blockquote>
+        “To every retiree standing at the crossroads, this book is a spark of hope—a gentle nudge to begin again. The goal isn’t just income; it’s renewal, connection, and a life of meaning.”
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h2>Don’t just retire — <span class="highlight" style="color:#fff; font-weight:800">REINVENT</span></h2>
+      <p style="opacity:.95; margin-top:6px">Your next chapter can be your best chapter.</p>
+      <p><a class="btn" href="https://www.amazon.com/dp/B0FM41Q2M8" target="_blank">Get Your Copy on Amazon Kindle</a></p>
+
+      <!-- Social icons -->
+      <div class="social">
+        <a class="icon" href="https://facebook.com/abuabdullah.alzaabi" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.48 17.52 2 11.94 2S2 6.48 2 12.06c0 5.03 3.69 9.2 8.5 9.94v-7.03H8.1v-2.9h2.4V9.83c0-2.38 1.42-3.7 3.58-3.7 1.04 0 2.13.18 2.13.18v2.35h-1.2c-1.18 0-1.55.73-1.55 1.48v1.77h2.64l-.42 2.9h-2.22V22c4.81-.74 8.5-4.91 8.5-9.94z"/></svg>
+        </a>
+        <a class="icon" href="https://www.linkedin.com/in/juma-alzaabi" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M6.94 7.5A2.44 2.44 0 1 1 6.93 2.6a2.44 2.44 0 0 1 .01 4.9zM3.97 21.4h5.94V9.22H3.97V21.4zM13.1 9.22h5.7v1.74h.08c.79-1.4 2.72-2.88 5.6-2.88 5.99 0 7.1 3.95 7.1 9.08V21.4h-5.95v-5.37c0-1.28-.03-2.93-1.78-2.93-1.79 0-2.06 1.4-2.06 2.84v5.46H13.1V9.22z"/></svg>
+        </a>
+        <a class="icon" href="mailto:myline70@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.5-8 5-8-5V6l8 5 8-5v2.5z"/></svg>
+        </a>
+      </div>
+
+      <p style="opacity:.7; font-size:12px; margin-top:16px">© Juma M.Z — All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
